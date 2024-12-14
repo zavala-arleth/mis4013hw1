@@ -26,15 +26,15 @@
   </li>
       </ul>
 <div>
-  <canvas id="myChart"></canvas>
+  <canvas id="myChart1"></canvas>
 </div>
        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>  
-const labels = Utils.months({count: 7});
+const labels = ['January', 'Febuary','March','April','May','June','July','August','September','October','November','December'];
 const data = {
   labels: labels,
   datasets: [{
-    label: 'My First Dataset',
+    label: 'Temperature',
     data: [65, 59, 80, 81, 56, 55, 40],
     fill: false,
     borderColor: 'rgb(75, 192, 192)',
@@ -44,7 +44,10 @@ const data = {
   type: 'line',
   data: data,
 };
-
+  const myChart = new Chart(
+  document.getElementById('myChart1'),
+  config
+ );
+    </script>
     </body>
-    
 </html>
