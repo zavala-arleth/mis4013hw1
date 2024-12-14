@@ -24,8 +24,9 @@
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="page5.html">Page 5</a>
   </li>
+    </ul>
      <div>
-  <canvas id="myChart"></canvas>
+  <canvas id="myChart3"></canvas>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -42,7 +43,7 @@
     'Running'
   ],
   datasets: [{
-    label: 'My First Dataset',
+    label: 'Radar 1',
     data: [65, 59, 90, 81, 56, 55, 40],
     fill: true,
     backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -52,7 +53,7 @@
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(255, 99, 132)'
   }, {
-    label: 'My Second Dataset',
+    label: 'Radar 2',
     data: [28, 48, 40, 19, 96, 27, 100],
     fill: true,
     backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -75,7 +76,7 @@
   },
 };
      const myChart = new Chart(
-        document.getElementById('myChart1'),
+        document.getElementById('myChart3'),
         config
       );
 </script>
